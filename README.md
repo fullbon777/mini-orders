@@ -64,3 +64,28 @@ mini-orders/
         ├── orange.jpg
         └── peach.jpg
 ```
+## セットアップ方法
+
+### 1. クローン
+```bash
+git clone https://github.com/yourname/mini-orders.git
+cd mini-orders
+```
+
+### 2. 仮想環境と依存関係
+```bash
+python -m venv venv
+source venv/bin/activate   # Windows は venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 3. DB 初期化
+```bash
+アプリ実行時に instance/app.db が自動生成されます。手動初期化は不要です。
+```
+
+### 4. 実行
+```bash
+flask run
+ブラウザで http://127.0.0.1:5000 を開くとアプリが利用できます。
+```
