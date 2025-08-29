@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 class="mb-4">Mini Orders</h1>
+<p class="lead">シンプルな注文 & 在庫管理アプリへようこそ</p>
+
+<div class="row">
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm h-100">
+      <div class="card-body text-center">
+        <h5 class="card-title">新しい注文</h5>
+        <p class="card-text">商品を選んで注文を作成します。</p>
+        <a href="{{ url_for('new_order') }}" class="btn btn-primary">新規注文</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm h-100">
+      <div class="card-body text-center">
+        <h5 class="card-title">注文一覧</h5>
+        <p class="card-text">顧客や商品ごとの注文を確認できます。</p>
+        <a href="{{ url_for('orders') }}" class="btn btn-outline-primary">注文を見る</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm h-100">
+      <div class="card-body text-center">
+        <h5 class="card-title">在庫管理</h5>
+        <p class="card-text">商品在庫を確認し、補充ができます。</p>
+        <a href="{{ url_for('products') }}" class="btn btn-outline-success">在庫を見る</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

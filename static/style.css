@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+h1 {
+  color: darkblue;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid #aaa;
+  padding: 8px;
+}
